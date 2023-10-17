@@ -1,3 +1,4 @@
+import 'package:ecom/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class WelcomeScreen extends StatefulWidget {
@@ -46,7 +47,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             ElevatedButton(
 
 
-            onPressed: (){}, child: Text('Continue',style: TextStyle(color: Colors.black),),
+            onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen(),));
+            }, child: Text('Continue',style: TextStyle(color: Colors.black),),
           style: ElevatedButton.styleFrom(
             minimumSize: Size(400, 60),
             backgroundColor: Colors.white,
